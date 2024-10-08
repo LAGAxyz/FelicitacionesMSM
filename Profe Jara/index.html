@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Cumpleaños, Oliver!</title>
+    <style>
+        body {
+            background-color: #ffeb3b; /* Color de fondo brillante */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            color: #333;
+        }
+        h1 {
+            color: #e91e63;
+            font-size: 3.5em;
+            animation: bounce 1s infinite;
+        }
+        p {
+            font-size: 1.5em;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.5em;
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #e64a19;
+        }
+        .message {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: #4caf50;
+        }
+        .balloons {
+            margin-top: 30px;
+        }
+        .balloon {
+            width: 80px;
+            height: auto;
+            margin: 10px;
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>¡Feliz Cumpleaños, Oliver Jara Miranda!</h1>
+    <p>Hoy celebramos un año más de tu vida.</p>
+    <p>¡Haz clic en el botón para recibir un mensaje especial!</p>
+    <button id="celebrateButton">¡Celebra!</button>
+    <div class="message" id="birthdayMessage">🎉 ¡Que este nuevo año te traiga mucha felicidad y éxitos! 🎉</div>
+    <div class="balloons">
+        <svg class="balloon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ff5252"><circle cx="12" cy="12" r="8"/></svg>
+        <svg class="balloon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#234576"><circle cx="12" cy="12" r="8"/></svg>
+        <svg class="balloon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#4caf50"><circle cx="12" cy="12" r="8"/></svg>
+        <svg class="balloon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2196f3"><circle cx="12" cy="12" r="8"/></svg>
+        <svg class="balloon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ff9800"><circle cx="12" cy="12" r="8"/></svg>
+    </div>
+
+    <script>
+        document.getElementById('celebrateButton').onclick = function() {
+            document.getElementById('birthdayMessage').style.display = 'block';
+        };
+    </script>
+</body>
+</html>
